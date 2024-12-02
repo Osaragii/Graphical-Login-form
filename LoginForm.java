@@ -3,14 +3,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-//Created a JFrame
-//Created username and password labels and text fields
-//Created a submit button
-//Created a label to display messages
-
 public class LoginForm {
     public static void main(String[] args) {
-        
+
         JFrame frame = new JFrame("Login Form");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(350, 200);
@@ -20,10 +15,6 @@ public class LoginForm {
         JTextField usernameField = new JTextField();
         JLabel passwordLabel = new JLabel("Password:", SwingConstants.CENTER);
         JPasswordField passwordField = new JPasswordField();
-
-        JButton submitButton = new JButton("Submit");
-
-        JLabel messageLabel = new JLabel("", SwingConstants.CENTER);
 
     }
 }
