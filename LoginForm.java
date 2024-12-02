@@ -27,5 +27,11 @@ public class LoginForm {
         frame.add(submitButton);
         frame.add(messageLabel);
 
+        submitButton.addActionListener(new ActionListener()) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String username = usernameField.getText();
+                String password = new String(passwordField.getPassword());
+
     }
 }
