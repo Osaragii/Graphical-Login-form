@@ -20,5 +20,12 @@ public class LoginForm {
 
         JLabel messageLabel = new JLabel("", SwingConstants.CENTER);
 
+        frame.add(usernameLabel);
+        frame.add(usernameField);
+        frame.add(passwordLabel);
+        frame.add(passwordField);
+        frame.add(submitButton);
+        frame.add(messageLabel);
+
     }
 }
