@@ -16,5 +16,9 @@ public class LoginForm {
         JLabel passwordLabel = new JLabel("Password:", SwingConstants.CENTER);
         JPasswordField passwordField = new JPasswordField();
 
+        JButton submitButton = new JButton("Submit");
+
+        JLabel messageLabel = new JLabel("", SwingConstants.CENTER);
+
     }
 }
