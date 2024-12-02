@@ -27,11 +27,22 @@ public class LoginForm {
         frame.add(submitButton);
         frame.add(messageLabel);
 
-        submitButton.addActionListener(new ActionListener()) {
+        submitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String username = usernameField.getText();
                 String password = new String(passwordField.getPassword());
 
+                if ("admin".equals(username) && "password123".equals(password)) {
+                    messageLabel.setText("Welcome, " + username + "!");
+                    messageLabel.setForeground(Color.GREEN);
+                } else {
+                    messageLabel.setText("Invalid username or password.");
+                    messageLabel.setForeground(Color.RED);
+                }
+            }
+        });
+        
+        frame.setVisible(true);
     }
 }
